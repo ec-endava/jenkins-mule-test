@@ -5,11 +5,8 @@
 	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
-	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="9cf4e01c-c6fb-4cce-b06b-3fa069fa0c59" >
-		<http:listener-connection host="0.0.0.0" port="8081" />
-	</http:listener-config>
-	<http:listener-config name="HTTP_Listener_config1" doc:name="HTTP Listener config" doc:id="8b3f53f4-4455-48b7-9ff8-3b52777db50e" >
-		<http:listener-connection host="0.0.0.0" port="8081" />
+	<http:listener-config name="HTTP_Listener_config" protocol="HTTP" doc:name="HTTP Listener config" doc:id="9cf4e01c-c6fb-4cce-b06b-3fa069fa0c59" >
+		<http:listener-connection host="0.0.0.0" port="8080" />
 	</http:listener-config>
 	<flow name="jenkins-flowFlow" doc:id="bf64e917-cca2-4367-a442-f5af968637d7" >
 		<http:listener doc:name="Listener" doc:id="e9abe533-4125-48f6-b000-432dafb8b11b" config-ref="HTTP_Listener_config" path="/run-jenkins"/>
