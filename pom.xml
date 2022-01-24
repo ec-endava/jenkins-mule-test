@@ -28,8 +28,8 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.4.0</muleVersion>
-						<username>encastro</username>
-						<password>Goskenas1</password>
+						<username>yanet</username>
+						<password>Christ19.*</password>
 						<environment>Sandbox</environment>
 						<applicationName>jenkins-mule-test</applicationName>
 						<workerType>MICRO</workerType>
